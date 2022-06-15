@@ -66,12 +66,7 @@ int CutDigit(int num)
 
     if (num > 999)
     {
-      int a;
-      int count = 0;
-      
-    while (count <= 999);
-    {
-       a = num / 10;      
+     a = num / 10;      
       if (a > 100 && a < 999) return (a % 10); 
     }
     }
@@ -91,17 +86,17 @@ Console.WriteLine("Trird digit: " + result);
 
 
 // Задача № 3. Почему -то не срабатывают выходные дни,программа пишет, что это не день недели.
-/*
+
 void CheckingTheDayOfTheWeek (int dayNumber)
  {
   if (dayNumber == 6 && dayNumber == 7) Console.WriteLine("Weekand -> yes");
   if (dayNumber >= 1 && dayNumber <= 5) Console.WriteLine("Is not weekand -> no");
+  
+      else Console.WriteLine("Is not week day!");
+  }
 
-  else Console.WriteLine("Is not week day!");
 
-}
  
 Console.Write("Input your number of the week day: ");
 int dayNumber = Convert.ToInt32(Console.ReadLine());
 CheckingTheDayOfTheWeek(dayNumber);
-*/
