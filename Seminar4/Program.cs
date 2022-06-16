@@ -39,7 +39,7 @@ Console.Write($"Сумма цифр в числе {a} равна  {result}");
 int MPOfDigit(int num)
 {
     if(num <= 0) return -1;
-    else {int mp = 1;
+    else int mp = 1;
     int current = 1;
     while(current <= num)
     {
