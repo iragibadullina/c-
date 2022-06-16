@@ -73,17 +73,20 @@ Distance = FindLenght(xA, yA, zA, xB, yB, zB);
 Console.WriteLine("Вistance between points is " + Distance);
 */
 
-// Задача № 19. Оставлю пока так. но доделаю
+// Задача № 19. 
+
+
 void CheckingPolindromNumber(int num)
 {
-     if ((num / 10000 == num % 10) && ((num / 1000)%10 == (num % 100)/10)) Console.Write("Your number is polindrom");
-
-    else Console.Write("Your number is not polindrom") ;
-     }
     
-  
+    if ((num / 10000 == num % 10) && ((num / 1000) % 10 == (num % 100) / 10)) Console.Write("Your number is polindrom");
+    if ((num / 10000 <= num % 10) && (num / 10000 >= num % 10)) Console.Write("Your number is not polindrom") ;
 
-
+    else  Console.WriteLine("Your number is not correct!");
+     }
+     
+    
 Console.Write("Input your number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 CheckingPolindromNumber(num);
+
