@@ -1,7 +1,9 @@
 ﻿// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
-/*
+
+/*Вариант 1.
+
 int NumbreOfThePower (int A, int B)
 {
      int current = 1;
@@ -22,6 +24,29 @@ int B = Convert.ToInt32(Console.ReadLine());
 int result = NumbreOfThePower(A, B);
  Console.Write($"Натуральное число {A} в степени {B} равна {result} ");
 */
+
+//Вариант 2.
+
+int NumbreOfThePower (int A, int B)
+{
+     int current = 1;
+     int result = 1;
+     
+    while (current <= B)
+    {
+       Math.Sqrt(A * A);    
+       current++;
+       result = result * A;
+    }
+    return result;
+}
+Console.Write("Input your number A: ");
+int A = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input your number B: ");
+int B = Convert.ToInt32(Console.ReadLine());
+int result = NumbreOfThePower(A, B);
+ Console.Write($"Натуральное число {A} в степени {B} равна {result} ");
+
 
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
