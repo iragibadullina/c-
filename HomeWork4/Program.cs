@@ -11,7 +11,7 @@ int NumbreOfThePower (int A, int B)
      
     while (current <= B)
     {
-       Math.Pow(A, current);
+       
        current++;
        result = result * A;
     }

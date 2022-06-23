@@ -54,23 +54,22 @@ int[] ChangeNegativOnPositiv(int[] array)
 
 //Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
 
-bool FingDigit (int[]array, int aa)
+bool FindNumberInArray (int[]array, int aa)
 {
-    bool bb = false;
-    for(i = 0; i < array.Length; i++)
-    {
-        if(array[i] == aa) bb = true;
-    }
-    return bb;
-
+for(int i = 0; i < array.Length; i++){
+if(array[i] == aa) return true;
 }
+return false;
+}
+
+
 
 //Задайте одномерный массив из 12 случайных чисел. Найдите 
 
 int FindElements(int[] array, int min, int max)
 {
     int count = 0;
-    for (int i = 0; i < array.Lehgth; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         if(array[i] >= min && array[i] <= max) count++;
     }
@@ -80,19 +79,6 @@ int FindElements(int[] array, int min, int max)
 
 
 
-bool FindNumberInArray(int[] array, int aa){
-for(int i = 0; i < array.Length; i++){
-if(array[i] == aa) return true;
-}
-return false;
-}
-
-int[] ReverseElementsArray(int[] array){
-for(int i = 0; i < array.Length; i++){
-array[i] *= -1;
-}
-return array;
-}
 
 int FindCountElemensInRange( int[] array, int min, int max){
 int count = 0;

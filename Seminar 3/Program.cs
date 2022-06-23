@@ -17,7 +17,7 @@ if (result == -1)  Console.WriteLine("Данная точка расположе
  else Console.WriteLine($"Точка находится в {result} четверти");
 
 */
-
+/*
 void FindQuart(int x)
 {
     if (x >= 1 && x <= 4);
@@ -33,3 +33,13 @@ void FindQuart(int x)
 int x;
 Console.WriteLine("Input number quart; ");
 x = Convert.ToInt32(Console.ReadLine());
+FindQuart(x);
+*/
+
+double FindLeght(double xA, double yA, double xB, double yB)
+{
+   return Math.Sqrt ((xB - xA)*(xB - xA) + Math.Pow((yB -yA),2));
+}
+
+
+
